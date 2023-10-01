@@ -21,7 +21,7 @@ from .settings import MEDIA_ROOT, MEDIA_URL
 
 urlpatterns = [
     path('admin/', admin.site.urls), #+
-    path('index/',index, name="index"), # не работает на момент 29го марта 
+    path('index/',index, name="index"), # не работает на момент 29го февраля 
     path('products/', product_view), #+      (GET - работает, POST - нет) 
     path('products/<int:id>', view), #+ (GET - работает)
     path('<int:id>/category',product_category_image, name='product_category_image'),  #+
